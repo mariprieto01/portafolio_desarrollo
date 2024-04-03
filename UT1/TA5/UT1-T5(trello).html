@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="viewport" content="maximum-scale=1,width=device-width, initial-scale=1.0">
+  <title>Prueba Trello</title>
+  <link rel="stylesheet" href="archivo.css">
+</head>
+
+<body>
+  <div class="cabecera">
+    <img src="logo_trello.png" width="60">
+    <select name="Workspaces" id="a">
+      <option>Workspaces</option>
+      <option>
+        <a href="https://trello.com/b/oP41n0PE/pruebadesarrollo" target="_blank">Espacio de trabajo de Trello</a>
+      </option>
+    </select>
+    <select name="Recent" id="b">
+      <option>Recent</option>
+    </select>
+    <select name="Starred" id="c">
+      <option>Starred</option>
+    </select>
+    <select name="Templates" id="d">
+      <option>Templates</option>
+    </select>
+    <button>Create</button>
+    <input placeholder="🔎 Buscar" type="text">
+    <button>Notificaciones</button>
+    <button>Perfil</button>
+  </div>
+
+  <div class="item">
+    <span class="text">prueba_desarrollo</span>
+    <button>☆</button>
+    <button>botón</button>
+    <select name="opciones" id="opciones">
+      <option value="board">Board</option>
+      <option value="table">Table</option>
+      <option value="calendar">Calendar</option>
+      <option value="timeline">Timeline</option>
+      <option value="dashboard">Dashboard</option>
+      <option value="map">Map</option>
+    </select>
+  </div>
+
+  <div>
+    <ul>
+      <li class="bloque">
+        <div class="tarjeta">
+          <h3>En proceso</h3>
+          <button id = "addCard1">+ Add a card</button>
+          <input type="text" class="hidden" id="cardInput1">
+        </div>
+      </li>
+      <li class="bloque">
+        <div class="tarjeta">
+          <h3>Lista de tareas</h3>
+          <button id="addCard2">+ Add a card</button>
+          <input type="text" class="hidden" id="cardInput2">
+        </div>
+      </li>
+      <li class="bloque">
+        <div class="tarjeta">
+          <h3>Hecho</h3>
+          <button id="addCard3">+ Add a card</button>
+          <input type="text" class="hidden" id="cardInput3">
+        </div>
+      </li>
+    </ul>
+  </div>
+  <script src="archivo.js"></script>
+</body>
+</html>
