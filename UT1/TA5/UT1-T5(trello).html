@@ -9,13 +9,43 @@
 </head>
 
 <body>
+
+  <div class="overlay hidden">
+    <div class="content">
+      <button id="botonCancelar">X</button>
+      <h2>Crear tarjeta</h2>
+      <input id="nombreTarjeta" placeholder="Título">
+      <input id="descripcion" placeholder="Descripción"></input>
+      <input id="assignedTo" placeholder="Asignado a"></input>
+      <input id="startDate" placeholder="Fecha de inicio"></input>
+      <input id="endDate" placeholder="Fecha de fin"></input>
+      <input id="status" placeholder="Estado"></input>
+      <input id="priority" placeholder="Prioridad"></input>
+      <input type="array String" id="comments" placeholder="Comentarios"></input>
+      <button id="guardarTarjeta">Guardar</button>
+    </div>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="botonCancelar2">X</button>
+      <h2>Información de la tarjeta</h2>
+      <span id="tituloModal"></span>
+      <span id="descripcionModal"></span>
+      <span id="assignedToModal"></span>
+      <span id="startDateModal"></span>
+      <span id="endDateModal"></span>
+      <span id="statusModal"></span>
+      <span id="priorityModal"></span>
+      <span id="commentsModal"></span>
+    </div>
+  </div>
+
   <div class="cabecera">
-    <img src="logo_trello.png" width="60">
+    <img src="logo_trello.png" width="75">
     <select name="Workspaces" id="a">
       <option>Workspaces</option>
-      <option>
-        <a href="https://trello.com/b/oP41n0PE/pruebadesarrollo" target="_blank">Espacio de trabajo de Trello</a>
-      </option>
+      <option>Espacio de trabajo de Trello</option>
     </select>
     <select name="Recent" id="b">
       <option>Recent</option>
@@ -27,12 +57,14 @@
       <option>Templates</option>
     </select>
     <button>Create</button>
-    <input placeholder="🔎 Buscar" type="text">
-    <button>Notificaciones</button>
-    <button>Perfil</button>
+    <div class = "contenedor-derecha">
+      <input placeholder="🔎 Buscar" type="text">
+      <button>Notificaciones</button>
+      <button>👤</button>
+    </div>
   </div>
 
-  <div class="item">
+  <div class="barra">
     <span class="text">prueba_desarrollo</span>
     <button>☆</button>
     <button>botón</button>
@@ -49,28 +81,29 @@
   <div>
     <ul>
       <li class="bloque">
-        <div class="tarjeta">
-          <h3>En proceso</h3>
-          <button id = "addCard1">+ Add a card</button>
-          <input type="text" class="hidden" id="cardInput1">
+        <h3>Lista de tareas</h3>
+        <div class="tarjetas">
         </div>
+        <button id = "addCard1">+ Add new card</button>
       </li>
       <li class="bloque">
-        <div class="tarjeta">
-          <h3>Lista de tareas</h3>
-          <button id="addCard2">+ Add a card</button>
-          <input type="text" class="hidden" id="cardInput2">
+        <h3>En proceso</h3>
+        <div class="tarjetas">
         </div>
+        <button id="addCard2">+ Add new card</button>
       </li>
       <li class="bloque">
-        <div class="tarjeta">
-          <h3>Hecho</h3>
-          <button id="addCard3">+ Add a card</button>
-          <input type="text" class="hidden" id="cardInput3">
+        <h3>Hecho</h3>
+        <div class="tarjetas">
         </div>
+        <button id="addCard3">+ Add new card</button>
+      </li>
+      <li class="bloqueAddList">
+        <button id="addList">+ Add another list</button>
       </li>
     </ul>
   </div>
+
   <script src="archivo.js"></script>
 </body>
 </html>
