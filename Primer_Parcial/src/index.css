@@ -1,0 +1,41 @@
+body{
+  background-color: rgb(175, 170, 177);
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+button {
+  background-color: rgb(211, 227, 111);
+  color: black;
+  width: 240px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: black(252, 182, 242);
+  border-radius: 8px;
+}
+
+.tarjeta {
+  background-color: rgb(211, 227, 111);
+  padding: 1em;
+  margin: 10px;
+  width: 245px;
+  border-radius: 8px;
+  border-color: black;
+}
+
+.tituloDeporte {
+  background-color: black;
+  padding: 1em;
+  margin: 10px;
+  width: 245px;
+  border-radius: 8px;
+  border-color: black;
+}
